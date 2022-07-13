@@ -9,6 +9,7 @@
         <link href='https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900' rel='stylesheet'>
         <link rel = 'icon' href = 'xsmp-logo.png' type = 'image/x-icon'>
         <link rel='stylesheet' href='style.css'>
+        <script src="logincheck.js"></script>
     </head>
 
     <header>
@@ -28,15 +29,14 @@
     </header>
 
     <body>
-
         <form>
             <div class="container">
             <h1 class="title">XSMP Login</h1>
             <label class="formlabel" for="username">Username</label>
             <input required type="text" id="username" name="username" placeholder="Your Login Username...">
-            <label class="formlabel" for="lname">Password</label>
+            <label class="formlabel" for="password">Password</label>
             <input required type="text" id="password" name="Password" placeholder="Your Login Password...">
-            <input required type="submit" value="Login">
+            <input required type="submit" value="Login" onclick="verifyLogin()">
             </div>
         </form>
     </body>
