@@ -1,0 +1,171 @@
+body {
+    background-color: #36393f;
+    margin: 0;
+    font-family: Poppins;
+}
+
+.giant {
+    text-align: center;
+    font-size: 300%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: 80%;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.title {
+    text-align: center;
+    font-size: 170%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: 80%;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.mainlogo {
+    text-align: center;
+}
+
+.mainlogo img {
+    max-width: 300px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    background-color: lightgreen;
+}
+  
+.navbar button {
+    cursor: pointer;
+    transition-duration: 0.5s;
+    font-size: 16px;
+    color: white;
+    font-weight: bolder;
+    background-color: lightgreen;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bolder;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.navbar button:hover, .dropdown:hover .dropbtn:hover {
+    color: #23272a;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgreen;
+    min-width: 160px;
+    z-index: 1;
+}
+  
+.dropdown-content button {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    font-weight: bolder;
+    background-color: lightgreen;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content button:hover {
+    color: #23272a;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+  
+::-webkit-scrollbar-track {
+    background: gray; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: lightgreen;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: lightgreen;
+}
+
+.container {
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 125px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+    background-color: lightgreen;
+    padding: 30px;
+}
+
+.container label {
+    font-weight: bolder;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container input[type=text], select, textarea {
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+}
+
+.container input[type=submit] {
+    position: relative;
+    top: 5px;
+    justify-content: center;
+    background-color: white;
+    color: #747474;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.container input[type=submit]:hover {
+    background-color: lightgray;
+}
