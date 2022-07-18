@@ -31,7 +31,65 @@
         <div class="mainlogo">
             <img src="xsmp-title.png" alt="xsmp logo">
         </div>
-        <h1 class="title">Hello World</h1>
+        <h1 class="title">Our realms are build with the smallest details in mind to ensure a perfect Minecraft Bedrock survival experience for all of our members. Here you can view information detailing all of our special features, learn about the realm and its staff team that work to keep us safe, and view our various Discord bots and what they do in our community Discord server.</h1>
+        <br>
+        <br>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="/images/spawn.png" style="width:100%">
+              <div class="text">Spawn</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="/images/enchantress.png" style="width:100%">
+              <div class="text">Permanent Effect Shop</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="/images/particle.png" style="width:100%">
+              <div class="text">Particle Trail Shop</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img src="/images/pvp.png" style="width:100%">
+              <div class="text">PvP Arena</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+          
+            <script>
+
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slides[slideIndex-1].style.display = "block";  
+            }
+            </script>
     </body>
 
     </html>
